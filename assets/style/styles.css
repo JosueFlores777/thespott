@@ -1,5 +1,6 @@
-.margenGlobal {
+.margenGlobal, .backpadi {
     margin: 50px;
+    margin-top: 90px;
 }
 
 .navbar {
@@ -11,13 +12,14 @@ a {
 }
 
 
+
 .top-bar {
-    background-color: #7C440B;
+    background-color: #1E192B;
 }
 
-.imageComecioSeccion{
-    width: 500px;
-    height: auto;
+.btn-link {
+    color: #BB6C02 !important;
+    font-weight: 500;
 }
 
 .top-bar p {
@@ -320,7 +322,7 @@ a {
         width: auto;
     }
 
-    .margenGlobal {
+    .margenGlobal, .backpadi {
         margin: 25px;
     }
 
@@ -348,7 +350,20 @@ a {
         height: 230px;
     }
 
+    .card .bank {
+        object-fit: contain !important;
+        width: 100%;
+        height: auto;
+    }
+
 }
+
+.card .bank {
+    object-fit: contain;
+    width: 100%;
+    height: auto;
+}
+
 
 @media (max-width: 767.98px) {
     .card-body {
@@ -382,7 +397,7 @@ a {
         margin-bottom: 95px !important;
     }
 
-    .margenGlobal {
+    .margenGlobal, .backpadi {
         margin: 20px;
     }
 
@@ -420,6 +435,20 @@ a {
 }
 
 @media (max-width: 500px) {
+
+    .slick-dots {
+        position: absolute;
+        bottom: -65px !important;
+    }
+
+    .slick-slide {
+         margin: 0 5px; 
+    }
+
+    .backpadi{
+        margin: -2px;
+        margin-top: 140px;
+    }
     .custom-dimensions {
         object-fit: cover;
         width: 100%;
@@ -530,84 +559,25 @@ a {
 
 /**/
 
-.hidden1 {
-    opacity: 0;
-    filter: blur(5px);
-    transform: translateX(-100%);
-    transition: all 1s;
-}
 
-.show {
-    opacity: 1;
-    filter: blur(0);
-    transform: translateX(0);
-}
-
-@media(prefers-reduced-motion) {
-    .hidden1 {
-        transition: none;
-    }
+.logocarruel img {
+    width: 200px;
+    height: 100px;
+    margin-right: 10px;
+    object-fit: contain;
 }
 
 
-#containerScrollInfiteHome {
-    display: grid;
-    /*min-block-size: 100vh;*/
-    font-family: system-ui;
-    font-size: 1.125rem;
+.container-scroll-infinite-home {
+    height: 160px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
 }
 
 
-#containerScrollInfiteHome {
-    margin-top: 50px;
-}
-
-.scrollerHome {
-    overflow: hidden;
-    max-width: auto;
-}
-
-.scrollerHome__inner {
-    height: 235px;
-    padding-block: 1rem;
+.scroller-home {
     display: flex;
-    flex-wrap: wrap;
-    gap: 1rem;
-    width: max-content;
-}
-
-.scrollerHome[data-animated="true"] {
-    -webkit-mask: linear-gradient(90deg, transparent, white 20%, white 80%, transparent);
-    mask: linear-gradient(90deg, transparent, white 20%, white 80%, transparent);
-}
-
-.scrollerHome[data-animated="true"] .scrollerHome__inner {
-    flex-wrap: nowrap;
-    animation: scroll var(--_animation-duration, 40s) var(--_animation-direction, forwards) linear infinite;
-}
-
-.scrollerHome[data-direction="right"] {
-    --_animation-direction: reverse;
-}
-
-.scrollerHome[data-direction="left"] {
-    --_animation-direction: forwards;
-}
-
-.scrollerHome[data-speed="fast"] {
-    --_animation-duration: 10s;
-}
-
-.scrollerHome[data-speed="slow2"] {
-    --_animation-duration: 40s;
-}
-
-.titleCarruWorkHome {
-    font-family: var(--Urbanist);
-}
-
-@keyframes scroll {
-    to {
-        transform: translate(calc(-50% - 0.5rem));
-    }
+    align-items: center;
+    justify-content: center;
 }
