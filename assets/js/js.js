@@ -33,7 +33,6 @@ logos = [
     './assets/img/logo/PORTA_logo.png',
     './assets/img/logo/soya-nutribar-logo.svg',
     './assets/img/logo/tengo-market-logo.svg'
-
 ];
 
 // Renderiza las tarjetas de comercio en la sección del carrusel
